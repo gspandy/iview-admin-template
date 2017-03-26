@@ -7,9 +7,9 @@
           <Submenu name="0">
             <template slot="title">
               <Icon type="ios-navigate"></Icon>
-              <span class="layout-text">DashBoard</span>
+              <span class="layout-text">Introduction</span>
             </template>
-            <Menu-item name="0-0">DashBoard</Menu-item>
+            <Menu-item name="0-0">Introduction</Menu-item>
           </Submenu>
           <Submenu name="1">
             <template slot="title">
@@ -74,11 +74,11 @@
     data () {
       return {
         activeName: '0-0',
-        currentPathName: 'DashBoard',
-        currentPathNameParent: 'DashBoard',
+        currentPathName: 'Introduction',
+        currentPathNameParent: 'Introduction',
         page: [{
-          name: 'DashBoard',
-          children: ['DashBoard']
+          name: 'Introduction',
+          children: ['Introduction']
         }, {
           name: 'Components',
           children: ['MarkdownEditor', 'QuillEditor']

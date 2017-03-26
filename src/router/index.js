@@ -8,7 +8,9 @@ const home = r => require.ensure([], () => r(require('../view/common/Home.vue'))
 const markdown = r => require.ensure([], () => r(require('../view/editor/MarkdownEditor.vue')), 'markdown')
 const quill = r => require.ensure([], () => r(require('../view/editor/QuillEditor.vue')), 'quill')
 const chart = r => require.ensure([], () => r(require('../view/charts/Chart.vue')), 'chart')
-
+const table = r => require.ensure([], () => r(require('../view/tables/Table.vue')), 'table')
+const form = r => require.ensure([], () => r(require('../view/forms/Form.vue')), 'form')
+const introduction = r => require.ensure([], () => r(require('../view/common/Introduction.vue')), 'introduction')
 export default new Router({
   routes: [
     {
@@ -34,6 +36,18 @@ export default new Router({
         {
           path: '/Charts',
           component: chart
+        },
+        {
+          path: '/Table',
+          component: table
+        },
+        {
+          path: '/Form',
+          component: form
+        },
+        {
+          path: '/Introduction',
+          component: introduction
         }
       ]
     }
