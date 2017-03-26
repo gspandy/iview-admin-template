@@ -7,6 +7,7 @@ const login = r => require.ensure([], () => r(require('../view/common/Login.vue'
 const home = r => require.ensure([], () => r(require('../view/common/Home.vue')), 'home')
 const markdown = r => require.ensure([], () => r(require('../view/editor/MarkdownEditor.vue')), 'markdown')
 const quill = r => require.ensure([], () => r(require('../view/editor/QuillEditor.vue')), 'quill')
+const chart = r => require.ensure([], () => r(require('../view/charts/Chart.vue')), 'chart')
 
 export default new Router({
   routes: [
@@ -29,6 +30,10 @@ export default new Router({
         {
           path: '/QuillEditor',
           component: quill
+        },
+        {
+          path: '/Charts',
+          component: chart
         }
       ]
     }
